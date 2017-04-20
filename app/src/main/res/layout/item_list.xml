@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="40dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="169dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="25dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="ID Estado: "
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:text="01"
+        android:textColor="#000"
+        android:textSize="11sp" />
+
+
+</LinearLayout>
