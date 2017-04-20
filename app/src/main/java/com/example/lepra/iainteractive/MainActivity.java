@@ -1,7 +1,9 @@
 package com.example.lepra.iainteractive;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -12,6 +14,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
+
     private ListView listView;
     private List<String> datos;
 
@@ -21,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         UI();
+
+        setSupportActionBar(toolbar);
 
         MyAdapter myAdapter = new MyAdapter(this, R.layout.item_list, datos);
 
@@ -36,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void UI(){
+
+        toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+
         listView = (ListView) findViewById(R.id.listView);
 
         datos = new ArrayList<String>();
